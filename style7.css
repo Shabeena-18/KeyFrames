@@ -1,0 +1,37 @@
+.box {
+    height: 100px;
+    width:100px;
+    border-radius:50%;
+    background-color:blue;
+    /* Apply bounce animation */
+    animation-name: bounce;
+
+    /* Animation takes 2 seconds */
+    animation-duration: 2s;
+
+    /* Repeat forever */
+    animation-iteration-count: infinite;
+    margin:50px;
+    
+}
+*{
+    background-color: rgb(239, 196, 7);
+}
+
+@keyframes bounce {
+
+    /* Starting position */
+    0% {
+        transform: translateY(200px);
+    }
+
+    /* Move upward */
+    50% {
+        transform: translateY(-100px);
+    }
+
+    /* Come back down */
+    100% {
+        transform: translateY(300px);
+    }
+}

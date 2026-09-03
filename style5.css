@@ -1,0 +1,24 @@
+body{
+ background-color:black;
+}
+.box{
+    width:100px;
+    height:100px;
+    background: rgb(141, 7, 74);
+    animation-name: leftToright; /*you can give any name here it should match the name at keyframes*/
+    animation-duration:3s; /*animation duration defines how longer it would take place*/
+    animation-timing-function: ease-in-out;
+    animation-delay:0.5s; /* it sets the delay before the animation starts*/
+    animation-iteration-count: infinite; /* how many times it could take place*/
+    animation-direction:alternate; /* reverse, normal, alternate, alteernate reverse*/
+    animation-fill-mode:forwards;
+    animation-play-state: reverse; /* used to pause and resume the animation*/
+} /*animation: moveBox 3s ease-in-out 0s 2 normal forwards;*/
+@keyframes leftToright{
+    from{
+        transform: translate(-400px);
+    }
+    to{
+        transform: translate(300px);
+    }
+}

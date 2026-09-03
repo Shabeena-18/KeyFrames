@@ -1,0 +1,29 @@
+.box{
+    width:100px;
+    height:100px;
+    background: rgb(141, 7, 74);
+    animation-name: orbit; /*you can give any name here it should match the name at keyframes*/
+    animation-duration:3s; /*animation duration defines how longer it would take place*/
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay:0s; /* it sets the delay before the animation starts*/
+    /* used to pause and resume the animation*/
+}
+@keyframes orbit{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+body{
+    background-color:yellowgreen;
+}
+
+.container{
+    border: 2px solid black;
+    height:50vh;
+    width:50vw;
+}

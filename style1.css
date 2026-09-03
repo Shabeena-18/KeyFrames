@@ -1,0 +1,11 @@
+
+.box{
+    width:100px;
+    height:100px;
+    background: rgb(141, 7, 74);
+    transition:1s ease;
+}
+.box:hover{
+    transform: translateX(500px);
+}
+/*by using only this i cant move my box to some other place so i am using the keyframes    */

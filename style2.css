@@ -1,0 +1,44 @@
+body{
+ background-color:black;
+}
+.container{
+    border:1px solid yellow;
+    height:70vh;
+    width:73vw;
+}
+.box{
+    width:100px;
+    height:100px;
+    background: rgb(141, 7, 74);
+    animation-name: moveBox; /*you can give any name here it should match the name at keyframes*/
+    animation-duration:2s; /*animation duration defines how longer it would take place*/
+    animation-timing-function: ease-in-out;
+    animation-delay:2s; /* it sets the delay before the animation starts*/
+    animation-iteration-count:2; /* how many times it could take place*/
+    animation-direction:normal; /* reverse, normal, alternate, alteernate reverse*/
+    animation-fill-mode:forwards;
+    animation-play-state:running; /* used to pause and resume the animation*/
+}
+@keyframes moveBox{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(300px,0);
+    }
+    50%{
+        transform: translate(300px,300px);
+    }
+    75%{
+        transform: translate(0px,300px);
+    }
+     100%{
+        transform: translate(0,0);
+    }
+
+}
+.box:hover{
+    animation-play-state:paused;
+}
+
+

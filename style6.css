@@ -1,0 +1,28 @@
+img {
+    height: 300px;
+
+    /* Apply the animation */
+    animation-name: drive;
+
+    /* How long one complete movement takes */
+    animation-duration: 2s;
+
+    /* Repeat the animation continuously */
+    animation-iteration-count: infinite;
+
+    /* Make the movement smooth */
+    animation-timing-function: linear;
+}
+
+
+@keyframes drive {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(900px);
+    }
+
+}
